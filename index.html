@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+    /* Universal selector */
+        * {box-sizing: border-box;}
+        .highlight {color: violet;}
+    
+    /* Type selector */
+    body {
+        background-color: #101028;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 3%;
+
+        background-image: url("images/galaxy.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    /* Class selector */
+    .featured-special {
+        border: 2px solid purple;
+        padding: 15px;
+        margin: 20px 0;
+        background-color: #242447;
+    }
+    
+    /* Type selector: styles the header */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Descendant selector */
+    nav a {
+        color: lightblue;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid white;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #483d8b;
+    }
+
+    /* Child selector */
+    section > h2 {
+        color: lightblue;
+    }
+
+    /* ID selector */
+    #about {
+        background-color: #252545;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    ul {list-style-type: square;}
+
+    ol {list-style-type: upper-roman;}
+
+    </style>
+
+    <meta charset="UTF-8"> <!-- "meta" always placed in "head"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Savion Tyler">
+    <title>Cosmic Midnight Café</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cosmic Midnight Café</h1>
+        <p>Where every sip is out of this world!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About our café</a>
+        <a href="#menu">Cosmic Menu</a>
+        <a href="#visit">Visit our Galaxy</a>
+    </nav>
+    
+    <section id="about">
+    <h2>About Our Café</h2>
+     <p>
+        Welcome to <strong>Cosmic Midnight Café</strong>, where the wonders of outer space meet 
+        delicious food and drinks in a relaxing, <!-- The inline gold color overrides the violet color from the .highlight class. -->
+        <span class="highlight" style="color: gold;">galaxy-inspired atmosphere</span>. Whether you're studying, 
+        unwinding, or spending time with friends, our café offers an out-of-this-world experience 
+        without ever leaving Earth!
+        </p>
+        
+    <p>
+        Explore the wonders of space at
+        <a href="https://science.nasa.gov/">NASA Science</a>.
+    </p>
+        <ul>
+        <li>Galaxy-Inspired Atmosphere
+        <ul>
+            <li>Glowing star decorations</li>
+            <li>Space-themed seating</li>
+                </ul>
+                </li>
+            <li>Free Wi-Fi</li>
+            <li>Cosmic Food and Drinks</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="menu">
+    <h2>Cosmic Menu</h2>
+    
+    <div class="featured-special">
+
+    <figure>
+        <img src="images/galactic-latte.jpg" alt="A colorful latte inspired by a galaxy" width="250">
+        <figcaption>Our featured Galactic Latte</figcaption>
+    </figure>
+
+        <h3>Featured Cosmic Special</h3>
+        <p>
+            Try our Galactic Latte, a creamy coffee with colorful galaxy swirls and
+        <span class="highlight">cosmic flavor</span> in every sip!
+        </p>
+    </div>
+    <table>
+        <caption>Cosmic Café Menu</caption>
+
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Galactic Latte
+                <br>
+                <img src="images/galactic-latte.jpg" alt="Galactic Latte thumbnail" width="60">
+                </td>
+                <td>
+                    A creamy latte with a swirl of cosmic colors.
+                    <br>
+                    <a href="https://www.nasa.gov/">Explore NASA</a>
+                </td>
+                <td>$4.50</td>
+            </tr>
+            <tr>
+                <td>Super Nova Sandwich</td>
+                <td>A hearty sandwich with interstellar flavors.</td>
+                <td>$6.50</td>
+            </tr>
+            <tr>
+                <td>Saturn's Rings</td>
+                <td>Golden onion rings served with dipping sauce</td>
+                <td>$3.50</td>
+            </tr>
+            <tr>
+                <td colspan="3">Enjoy an out-of-this-world dining experience!</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="visit">
+    <h2>Visit Our Galaxy</h2>
+
+        <p>
+            <em>Open Every Day!</em>
+            <br>
+            Location: 123 Galaxy Boulevard, Star City
+            <br>
+            Hours: 7:00 AM - 10:00 PM
+        </p>
+    
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>How to Order</h3>
+
+            <ol>
+                <li>Browse our Cosmic Menu and select your favorite food or drink.</li>
+                <li>Head to the counter and tell our staff what you would like to order.</li>
+                <li>Wait for your order to be prepared, then pick it up at the counter when your name is called.</li>
+            </ol>
+        </section>
+
+    <footer>
+            <p>
+                Savion Tyler &copy; 2026 | <a href="credits.html">Image Credits</a>
+            </p>
+        </footer>
+    </body>
+</html>
